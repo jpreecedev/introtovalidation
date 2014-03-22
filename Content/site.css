@@ -113,3 +113,7 @@ span.error {
 div > div > label {
     color: black;
 }
+
+.github {
+	padding: 4px;
+}
