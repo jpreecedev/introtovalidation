@@ -21,3 +21,7 @@ span.error {
 div > div > label {
     color: black;
 }
+
+footer {
+	margin-top: 25px;
+}
