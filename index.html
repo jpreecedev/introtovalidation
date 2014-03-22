@@ -1,112 +1,122 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Validation with jQuery</title>
+    <title>JPreeceDev.com</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="index.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="page-container">
 
-    <div class="container">
-        <div class="row">
-            <h1 class="text-center">Introduction to jQuery validation</h1>
-
-            <form role="form">
-                <div class="form-group has-feedback">
-                    <label for="emailAddress">Email address</label>
-                    <input type="email" class="form-control" id="emailAddress" placeholder="you@example.com" required>
-                    <span class="form-control-feedback"></span>
+        <!-- top navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="http://jpreecedev.com">JPreeceDev.com</a>
                 </div>
-                <div class="form-group has-feedback">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" minlength="6" required>
-                    <span class="form-control-feedback"></span>
-                </div>
-                <div class="form-group has-feedback">
-                    <label for="passwordConfirmation">Confirm password</label>
-                    <input type="password" class="form-control" id="passwordConfirmation" name="passwordConfirmation" placeholder="Confirm password" minlength="6" required>
-                    <span class="form-control-feedback"></span>
-                </div>
-                <hr />
-
-                <div class="form-group">
-                    <label for="favourite">Which is your favourite?</label>
-                    <select id="favourite" name="favourite" class="form-control">
-                        <option value="">-- Please select... --</option>
-                        <option value="TFS">TFS</option>
-                        <option value="GitHub">GitHub</option>
-                        <option value="BitBucket">BitBucket</option>
-                        <option value="Kiln">Kiln</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="earliestMemory">Can you describe your earliest memory?</label>
-                    <textarea id="earliestMemory" name="earliestMemory" class="form-control" rows="3" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label>What is your gender?</label>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="gender" id="gender" value="Male">
-                            Male
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="gender" id="gender" value="Female">
-                            Female
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Do you play games? If so, how do you play?</label>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" name="Games[]" value="WindowsPC">
-                            On my Windows PC
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" name="Games[]" value="Mac">
-                            On my Mac
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" name="Games[]" value="MobileDevice">
-                            On my tablet or mobile device
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" name="Games[]" value="Other">
-                            On some other medium
-                        </label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <button type="reset" class="btn btn-default">Reset</button>
-            </form>
-
+            </div>
         </div>
-    </div>
-<footer class="container">    
-  <hr>
-  <div class="row">
-    <div class="col-lg-12">
-	  <div class="col-md-4">
-		<p>This is a demo.  You can find the supporting material at <a href="http://jpreecedev.com/2014/03/22/jquery-validation-the-basics/">JPreeceDev.com.</a>
-	  </div>
-      <div class="col-md-8">
-        <p class="muted pull-right">© 2014 <a href="http://jpreecedev.com">JPreeceDev.com.</a> All rights reserved</p>
-      </div>
-    </div>
-  </div>
-</footer>
+
+        <div class="container">
+            <div class="row row-offcanvas row-offcanvas-left">
+
+                <!-- sidebar -->
+                <div class="col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                    <h4 class="text-center">Other posts</h4>
+                    <ul class="nav"></ul>
+                </div>
+
+                <!-- main area -->
+                <div class="col-sm-9">
+                    <h2 class="text-center">Introduction to validation with jQuery</h2>
+                    <form role="form">
+                        <div class="form-group has-feedback">
+                            <label for="emailAddress">Email address</label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="you@example.com" required>
+                            <span class="form-control-feedback"></span>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password" minlength="6" required>
+                            <span class="form-control-feedback"></span>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label for="passwordConfirmation">Confirm password</label>
+                            <input type="password" class="form-control" id="passwordConfirmation" name="passwordConfirmation" placeholder="Confirm password" minlength="6" required>
+                            <span class="form-control-feedback"></span>
+                        </div>
+                        <hr />
+
+                        <div class="form-group">
+                            <label for="favourite">Which is your favourite?</label>
+                            <select id="favourite" name="favourite" class="form-control">
+                                <option value="">-- Please select... --</option>
+                                <option value="TFS">TFS</option>
+                                <option value="GitHub">GitHub</option>
+                                <option value="BitBucket">BitBucket</option>
+                                <option value="Kiln">Kiln</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="earliestMemory">Can you describe your earliest memory?</label>
+                            <textarea id="earliestMemory" name="earliestMemory" class="form-control" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>What is your gender?</label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="gender" id="gender" value="Male">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="gender" id="gender" value="Female">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Do you play games? If so, how do you play?</label>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="Games[]" value="WindowsPC">
+                                    On my Windows PC
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="Games[]" value="Mac">
+                                    On my Mac
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="Games[]" value="MobileDevice">
+                                    On my tablet or mobile device
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="Games[]" value="Other">
+                                    On some other medium
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-default">Reset</button>
+                    </form>
+                </div>
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </div><!--/.page-container-->
+
     <script src="Scripts/jquery-1.9.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/site.js"></script>
     <script src="Scripts/jquery.validate.min.js"></script>
-    <script src="index.js"></script>
+    <script src="Scripts/additional-methods.min.js"></script>
 </body>
 </html>
+
+
